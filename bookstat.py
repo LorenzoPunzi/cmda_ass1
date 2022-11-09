@@ -1,5 +1,5 @@
 '''
-First assignment of CMEP course: dictionary of characters in a txt file given from command line
+Assignment 1 of CMEP course: dictionary of characters in a txt file given from command line
 '''
 
 import argparse
@@ -25,7 +25,6 @@ if __name__=='__main__':
 
 #Give an option of string and sets up what --help says for that option
     parser.add_argument('infile', type=str, help='path to the input file')
-
     parser.add_argument('-hist', action='store_true', help='Display a histogram of occurrences of the characters')
     parser.add_argument('-lim', type=int, default='30', help='Set the number of characters displayed, in descending order of appearance. Default is 30')
 
